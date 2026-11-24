@@ -1,5 +1,8 @@
 {
   "db": {
     "repository": "https://github.com/sebastien-akki/squadron-db"
+  },
+  "notes": {
+    "repository": "https://github.com/sebastien-akki/squadron-notes"
   }
 }
