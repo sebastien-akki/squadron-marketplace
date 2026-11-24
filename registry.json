@@ -4,5 +4,8 @@
   },
   "notes": {
     "repository": "https://github.com/sebastien-akki/squadron-notes"
+  },
+  "checks": {
+    "repository": "https://github.com/sebastien-akki/squadron-checks"
   }
 }
