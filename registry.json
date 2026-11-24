@@ -16,5 +16,8 @@
   },
   "stack": {
     "repository": "https://github.com/sebastien-akki/squadron-stack"
+  },
+  "delivery": {
+    "repository": "https://github.com/sebastien-akki/squadron-delivery"
   }
 }
