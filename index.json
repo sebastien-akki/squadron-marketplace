@@ -271,6 +271,71 @@
           ]
         }
       ]
+    },
+    {
+      "id": "notes",
+      "name": {
+        "en": "Notes",
+        "fr": "Notes"
+      },
+      "description": {
+        "en": "Private notes for each project, next to your agents: write them, put one in your message, and let agents read or add to them",
+        "fr": "Des notes privées pour chaque projet, à côté de vos agents : les écrire, en mettre une dans votre message, et laisser les agents les lire ou les compléter"
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iI0U4QTMzRCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMCA3aDlsNSA1djEyYTEgMSAwIDAgMS0xIDFIMTBhMSAxIDAgMCAxLTEtMVY4YTEgMSAwIDAgMSAxLTFaIi8+PHBhdGggZmlsbD0iI0U4QTMzRCIgZD0iTTE5IDd2NGExIDEgMCAwIDAgMSAxaDR6TTEyIDE1aDh2MS42aC04em0wIDMuNWg4djEuNmgtOHptMCAzLjVoNXYxLjZoLTV6Ii8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-notes",
+      "version": "0.1.0",
+      "commit": "3bd4e7af09677a5c1af6e1027f6a7388fc52cd9a",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/notes-0.1.0/notes-0.1.0.tar.gz",
+      "sha256": "24868b22e0de624a39391cddb39c44a9056f25d3172c16d4fb974b3783c2136f",
+      "squadron": ">=0.56.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-20",
+          "notes": {
+            "en": [
+              "First version: private notes for each project in a panel next to your agents, saved as you type.",
+              "Put a note in your message in one click.",
+              "Agents can list, read and add to the notes of their project with `notes_list`, `notes_read` and `notes_append`."
+            ],
+            "fr": [
+              "Première version : des notes privées pour chaque projet, dans un panneau à côté de vos agents, enregistrées pendant la frappe.",
+              "Mettre une note dans votre message en un clic.",
+              "Les agents peuvent lister, lire et compléter les notes de leur projet avec `notes_list`, `notes_read` et `notes_append`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "3bd4e7af09677a5c1af6e1027f6a7388fc52cd9a",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/notes-0.1.0/notes-0.1.0.tar.gz",
+          "sha256": "24868b22e0de624a39391cddb39c44a9056f25d3172c16d4fb974b3783c2136f",
+          "squadron": ">=0.56.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-20",
+              "notes": {
+                "en": [
+                  "First version: private notes for each project in a panel next to your agents, saved as you type.",
+                  "Put a note in your message in one click.",
+                  "Agents can list, read and add to the notes of their project with `notes_list`, `notes_read` and `notes_append`."
+                ],
+                "fr": [
+                  "Première version : des notes privées pour chaque projet, dans un panneau à côté de vos agents, enregistrées pendant la frappe.",
+                  "Mettre une note dans votre message en un clic.",
+                  "Les agents peuvent lister, lire et compléter les notes de leur projet avec `notes_list`, `notes_read` et `notes_append`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
