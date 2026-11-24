@@ -2,6 +2,83 @@
   "api": 1,
   "extensions": [
     {
+      "id": "checks",
+      "name": {
+        "en": "Checks",
+        "fr": "Contrôles"
+      },
+      "description": {
+        "en": "Quality checks on the files each agent changed, at the end of its turn: PHP syntax, PHPStan, PHP-CS-Fixer, YAML and Twig lint, composer validate and ESLint, run with the project's own config in Docker. A green or red chip on the agent, the details in a panel, and one click to ask the agent to fix them.",
+        "fr": "Des contrôles qualité sur les fichiers que chaque agent a modifiés, à la fin de son tour : syntaxe PHP, PHPStan, PHP-CS-Fixer, lint YAML et Twig, composer validate et ESLint, avec la configuration du projet, dans Docker. Une pastille verte ou rouge sur l’agent, le détail dans un panneau, et un clic pour lui demander de corriger."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjN0NDNDdDIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNCIvPjxwYXRoIGQ9Ik03LjUgMTIuNWwzIDMgNi03Ii8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-checks",
+      "version": "0.1.0",
+      "commit": "0e65c96431cd44a3aea437bf21664814ee105a74",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/checks-0.1.0/checks-0.1.0.tar.gz",
+      "sha256": "faca312b22fcca1ab260a33cf286bf9656dcf81132d894263fc340547d70dded",
+      "squadron": ">=0.59.0",
+      "permissions": {
+        "exec": [
+          "git",
+          "docker",
+          "id"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: at the end of each agent turn, php -l, PHPStan, PHP-CS-Fixer, YAML and Twig lint, composer validate and ESLint on the files the agent changed, each with the project's own config, in Docker.",
+              "A green or red chip on the agent's row, the details in the Checks panel, and Ask the agent to fix.",
+              "Agents can run the checks themselves with `checks_run`."
+            ],
+            "fr": [
+              "Première version : à la fin de chaque tour d’agent, php -l, PHPStan, PHP-CS-Fixer, lint YAML et Twig, composer validate et ESLint sur les fichiers que l’agent a modifiés, chacun avec la configuration du projet, dans Docker.",
+              "Une pastille verte ou rouge sur la ligne de l’agent, le détail dans le panneau Contrôles, et Demander à l’agent de corriger.",
+              "Les agents peuvent lancer les contrôles eux-mêmes avec `checks_run`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "0e65c96431cd44a3aea437bf21664814ee105a74",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/checks-0.1.0/checks-0.1.0.tar.gz",
+          "sha256": "faca312b22fcca1ab260a33cf286bf9656dcf81132d894263fc340547d70dded",
+          "squadron": ">=0.59.0",
+          "permissions": {
+            "exec": [
+              "git",
+              "docker",
+              "id"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: at the end of each agent turn, php -l, PHPStan, PHP-CS-Fixer, YAML and Twig lint, composer validate and ESLint on the files the agent changed, each with the project's own config, in Docker.",
+                  "A green or red chip on the agent's row, the details in the Checks panel, and Ask the agent to fix.",
+                  "Agents can run the checks themselves with `checks_run`."
+                ],
+                "fr": [
+                  "Première version : à la fin de chaque tour d’agent, php -l, PHPStan, PHP-CS-Fixer, lint YAML et Twig, composer validate et ESLint sur les fichiers que l’agent a modifiés, chacun avec la configuration du projet, dans Docker.",
+                  "Une pastille verte ou rouge sur la ligne de l’agent, le détail dans le panneau Contrôles, et Demander à l’agent de corriger.",
+                  "Les agents peuvent lancer les contrôles eux-mêmes avec `checks_run`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "db",
       "name": {
         "en": "Databases",
