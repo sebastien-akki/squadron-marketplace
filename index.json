@@ -554,6 +554,89 @@
       ]
     },
     {
+      "id": "stack",
+      "name": {
+        "en": "Stack health",
+        "fr": "Santé de la stack"
+      },
+      "description": {
+        "en": "Each project's stack at a glance: PHP, Symfony, Drupal, Sylius, Node and database versions against their end of life, and the known vulnerabilities of the locked Composer and npm packages. Scanned again every day, with a notification when something new comes up and one click to ask an agent for the updates.",
+        "fr": "La stack de chaque projet d’un coup d’œil : versions de PHP, Symfony, Drupal, Sylius, Node et de la base face à leur fin de vie, et failles connues des paquets Composer et npm verrouillés. Réanalysée chaque jour, avec une notification quand quelque chose de nouveau apparaît et un clic pour confier les mises à jour à un agent."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTNCMzQxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDNsOCAzdjZjMCA0LjUtMy40IDgtOCA5LTQuNi0xLTgtNC41LTgtOVY2eiIvPjxwYXRoIGQ9Ik04LjUgMTIuNWwyLjUgMi41IDQuNS01Ii8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-stack",
+      "version": "0.1.0",
+      "commit": "d56783410f4bf9d9448746d91f76fe45e2cc2520",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/stack-0.1.0/stack-0.1.0.tar.gz",
+      "sha256": "ad6935c400792366b9f39e2a18d2d6c69d7e9be984e2c3ae75392e890f019fc3",
+      "squadron": ">=0.56.0",
+      "permissions": {
+        "exec": [
+          "git",
+          "docker",
+          "id"
+        ],
+        "network": [
+          "endoflife.date"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: versions of PHP, Symfony, Drupal, Sylius, Node.js and the database against their end of life, and `composer audit` and `npm audit` on the locked packages.",
+              "Scanned again every day, with a notification for what is new.",
+              "Fix with an agent opens New agent with the list of updates; agents can read the report with `stack_report`."
+            ],
+            "fr": [
+              "Première version : versions de PHP, Symfony, Drupal, Sylius, Node.js et de la base face à leur fin de vie, et `composer audit` et `npm audit` sur les paquets verrouillés.",
+              "Réanalyse chaque jour, avec une notification pour ce qui est nouveau.",
+              "Corriger avec un agent ouvre Nouvel agent avec la liste des mises à jour ; les agents peuvent lire le rapport avec `stack_report`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "d56783410f4bf9d9448746d91f76fe45e2cc2520",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/stack-0.1.0/stack-0.1.0.tar.gz",
+          "sha256": "ad6935c400792366b9f39e2a18d2d6c69d7e9be984e2c3ae75392e890f019fc3",
+          "squadron": ">=0.56.0",
+          "permissions": {
+            "exec": [
+              "git",
+              "docker",
+              "id"
+            ],
+            "network": [
+              "endoflife.date"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: versions of PHP, Symfony, Drupal, Sylius, Node.js and the database against their end of life, and `composer audit` and `npm audit` on the locked packages.",
+                  "Scanned again every day, with a notification for what is new.",
+                  "Fix with an agent opens New agent with the list of updates; agents can read the report with `stack_report`."
+                ],
+                "fr": [
+                  "Première version : versions de PHP, Symfony, Drupal, Sylius, Node.js et de la base face à leur fin de vie, et `composer audit` et `npm audit` sur les paquets verrouillés.",
+                  "Réanalyse chaque jour, avec une notification pour ce qui est nouveau.",
+                  "Corriger avec un agent ouvre Nouvel agent avec la liste des mises à jour ; les agents peuvent lire le rapport avec `stack_report`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "worktree",
       "name": {
         "en": "Worktree",
