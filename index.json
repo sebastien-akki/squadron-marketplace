@@ -350,6 +350,63 @@
       ]
     },
     {
+      "id": "delivery",
+      "name": {
+        "en": "Delivery notes",
+        "fr": "Notes de livraison"
+      },
+      "description": {
+        "en": "Writes a project's delivery note for its client from the commits, merged pull requests and Jira tickets of a period: new, improved and fixed, in plain words, with what to test, as a page to share and a text for an email.",
+        "fr": "Rédige la note de livraison d’un projet pour son client à partir des commits, des pull requests fusionnées et des tickets Jira d’une période : nouveautés, améliorations et corrections en mots simples, avec ce qu’il faut tester, en page à partager et en texte pour un e-mail."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0NDMzlBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTE0IDNIN2EyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTBhMiAyIDAgMCAwIDItMlY4eiIvPjxwYXRoIGQ9Ik0xNCAzdjVoNSIvPjxwYXRoIGQ9Ik05IDEzbDIgMiA0LTQiLz48L3N2Zz4K",
+      "repository": "https://github.com/sebastien-akki/squadron-delivery",
+      "version": "0.1.0",
+      "commit": "29cb7088c18bf2a8648680d6bca080d804dc4bcb",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/delivery-0.1.0/delivery-0.1.0.tar.gz",
+      "sha256": "10c99c2ce77b9428a9a6704df1291ed5a3e7e6ff3b3e947d152fb4f7ec4832a2",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: Write the delivery note, in an agent's menu, writes the client's delivery note from the commits, merged pull requests and Jira tickets of a period, as a page to share and Markdown for an email."
+            ],
+            "fr": [
+              "Première version : Rédiger la note de livraison, dans le menu d’un agent, rédige la note de livraison du client à partir des commits, des pull requests fusionnées et des tickets Jira d’une période, en page à partager et en Markdown pour un e-mail."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "29cb7088c18bf2a8648680d6bca080d804dc4bcb",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/delivery-0.1.0/delivery-0.1.0.tar.gz",
+          "sha256": "10c99c2ce77b9428a9a6704df1291ed5a3e7e6ff3b3e947d152fb4f7ec4832a2",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: Write the delivery note, in an agent's menu, writes the client's delivery note from the commits, merged pull requests and Jira tickets of a period, as a page to share and Markdown for an email."
+                ],
+                "fr": [
+                  "Première version : Rédiger la note de livraison, dans le menu d’un agent, rédige la note de livraison du client à partir des commits, des pull requests fusionnées et des tickets Jira d’une période, en page à partager et en Markdown pour un e-mail."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "notes",
       "name": {
         "en": "Notes",
