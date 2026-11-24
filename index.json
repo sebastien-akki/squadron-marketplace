@@ -407,6 +407,79 @@
       ]
     },
     {
+      "id": "envs",
+      "name": {
+        "en": "Environments",
+        "fr": "Environnements"
+      },
+      "description": {
+        "en": "Staging then production, at a glance: each deployment branch of bitbucket-pipelines.yml with what is deployed, what waits to go out, the commits that would reach production without going through staging, and the staging validation. Deliver opens an agent that shows the commits, waits for your go, then runs the Makefile's merge target and follows the pipeline.",
+        "fr": "La staging puis la production d’un coup d’œil : chaque branche de déploiement de bitbucket-pipelines.yml avec ce qui est déployé, ce qui attend de partir, les commits qui iraient en production sans passer par la staging, et la validation de la staging. Livrer ouvre un agent qui montre les commits, attend votre feu vert, puis lance la cible de fusion du Makefile et suit la pipeline."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjg3MTcxIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjYiIHJ4PSIyIi8+PHJlY3QgeD0iMyIgeT0iMTQiIHdpZHRoPSIxOCIgaGVpZ2h0PSI2IiByeD0iMiIvPjxwYXRoIGQ9Ik03IDdoLjAxTTcgMTdoLjAxTTEyIDEwdjQiLz48L3N2Zz4K",
+      "repository": "https://github.com/sebastien-akki/squadron-envs",
+      "version": "0.1.0",
+      "commit": "131cde9542d62ede97b8e8c1784f05db5d2d44b8",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/envs-0.1.0/envs-0.1.0.tar.gz",
+      "sha256": "c5e130a61de3de6a148e40bf2fd0d7b04cb09bfcf7a8d3269f144105d1bea039",
+      "squadron": ">=0.56.0",
+      "permissions": {
+        "exec": [
+          "git"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: the deployment branches of bitbucket-pipelines.yml, with what each runs and what waits to go out.",
+              "Shows the commits that would reach production without going through staging, and remembers the staging validation.",
+              "Deliver opens an agent that shows the commits, waits for your go, runs the Makefile's merge target and follows the pipeline; agents read `envs_status` first."
+            ],
+            "fr": [
+              "Première version : les branches de déploiement de bitbucket-pipelines.yml, avec ce que chacune fait tourner et ce qui attend de partir.",
+              "Montre les commits qui iraient en production sans passer par la staging, et retient la validation de la staging.",
+              "Livrer ouvre un agent qui montre les commits, attend votre feu vert, lance la cible de fusion du Makefile et suit la pipeline ; les agents lisent `envs_status` d’abord."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "131cde9542d62ede97b8e8c1784f05db5d2d44b8",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/envs-0.1.0/envs-0.1.0.tar.gz",
+          "sha256": "c5e130a61de3de6a148e40bf2fd0d7b04cb09bfcf7a8d3269f144105d1bea039",
+          "squadron": ">=0.56.0",
+          "permissions": {
+            "exec": [
+              "git"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: the deployment branches of bitbucket-pipelines.yml, with what each runs and what waits to go out.",
+                  "Shows the commits that would reach production without going through staging, and remembers the staging validation.",
+                  "Deliver opens an agent that shows the commits, waits for your go, runs the Makefile's merge target and follows the pipeline; agents read `envs_status` first."
+                ],
+                "fr": [
+                  "Première version : les branches de déploiement de bitbucket-pipelines.yml, avec ce que chacune fait tourner et ce qui attend de partir.",
+                  "Montre les commits qui iraient en production sans passer par la staging, et retient la validation de la staging.",
+                  "Livrer ouvre un agent qui montre les commits, attend votre feu vert, lance la cible de fusion du Makefile et suit la pipeline ; les agents lisent `envs_status` d’abord."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "mails",
       "name": {
         "en": "Mails",
