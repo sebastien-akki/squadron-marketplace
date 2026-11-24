@@ -475,6 +475,83 @@
           ]
         }
       ]
+    },
+    {
+      "id": "sentry",
+      "name": {
+        "en": "Sentry",
+        "fr": "Sentry"
+      },
+      "description": {
+        "en": "The Sentry errors of each project next to your agents. Each new or returning error comes with a notification and a fix proposed by Claude Code, which reads the repository without changing it; one click opens an agent to apply it. Agents can read the errors and their stack traces.",
+        "fr": "Les erreurs Sentry de chaque projet à côté de vos agents. Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier ; un clic ouvre un agent pour l’appliquer. Les agents peuvent lire les erreurs et leurs stack traces."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQTc4QkZBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDMuNWw5IDE1LjVIM3oiLz48cGF0aCBkPSJNMTIgMTB2NCIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTYuNiIgcj0iLjYiIGZpbGw9IiNBNzhCRkEiLz48L3N2Zz4K",
+      "repository": "https://github.com/sebastien-akki/squadron-sentry",
+      "version": "0.1.0",
+      "commit": "de44df14ad7a4bf516f7d988c4f3128e65d89d05",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.1.0/sentry-0.1.0.tar.gz",
+      "sha256": "65c227935452cfc1fee310d7105b268fa39224ac9d82f2abc75b98a52f249afc",
+      "squadron": ">=0.59.0",
+      "permissions": {
+        "exec": [
+          "claude"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: the unresolved Sentry errors of the projects you follow, in a panel next to your agents.",
+              "Each new or returning error brings a notification and a fix proposed by Claude Code, which reads the repository without changing it: a diagnosis, a diff and what to check.",
+              "Fix with an agent opens New agent with the error, the proposal and the stack trace; Resolve and Ignore act on Sentry.",
+              "Agents can read the errors and their stack traces with `sentry_issues` and `sentry_issue`."
+            ],
+            "fr": [
+              "Première version : les erreurs Sentry non résolues des projets que vous suivez, dans un panneau à côté de vos agents.",
+              "Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier : un diagnostic, un diff et ce qu’il faut vérifier.",
+              "Corriger avec un agent ouvre Nouvel agent avec l’erreur, la proposition et la stack trace ; Résoudre et Ignorer agissent dans Sentry.",
+              "Les agents peuvent lire les erreurs et leurs stack traces avec `sentry_issues` et `sentry_issue`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "de44df14ad7a4bf516f7d988c4f3128e65d89d05",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.1.0/sentry-0.1.0.tar.gz",
+          "sha256": "65c227935452cfc1fee310d7105b268fa39224ac9d82f2abc75b98a52f249afc",
+          "squadron": ">=0.59.0",
+          "permissions": {
+            "exec": [
+              "claude"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: the unresolved Sentry errors of the projects you follow, in a panel next to your agents.",
+                  "Each new or returning error brings a notification and a fix proposed by Claude Code, which reads the repository without changing it: a diagnosis, a diff and what to check.",
+                  "Fix with an agent opens New agent with the error, the proposal and the stack trace; Resolve and Ignore act on Sentry.",
+                  "Agents can read the errors and their stack traces with `sentry_issues` and `sentry_issue`."
+                ],
+                "fr": [
+                  "Première version : les erreurs Sentry non résolues des projets que vous suivez, dans un panneau à côté de vos agents.",
+                  "Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier : un diagnostic, un diff et ce qu’il faut vérifier.",
+                  "Corriger avec un agent ouvre Nouvel agent avec l’erreur, la proposition et la stack trace ; Résoudre et Ignorer agissent dans Sentry.",
+                  "Les agents peuvent lire les erreurs et leurs stack traces avec `sentry_issues` et `sentry_issue`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
