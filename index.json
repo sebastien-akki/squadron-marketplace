@@ -407,6 +407,77 @@
       ]
     },
     {
+      "id": "mails",
+      "name": {
+        "en": "Mails",
+        "fr": "Mails"
+      },
+      "description": {
+        "en": "The mails your local site sends, caught by the project's Mailpit, in a panel next to your agents. Agents can search and read them to check an order or password-reset email while they test.",
+        "fr": "Les mails que votre site local envoie, attrapés par le Mailpit du projet, dans un panneau à côté de vos agents. Les agents peuvent les chercher et les lire pour vérifier un mail de commande ou de mot de passe pendant leurs tests."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkI5MjNDIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iMyIgeT0iNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE0IiByeD0iMyIvPjxwYXRoIGQ9Ik0zLjUgN2w4LjUgNiA4LjUtNiIvPjwvc3ZnPgo=",
+      "repository": "https://github.com/sebastien-akki/squadron-mails",
+      "version": "0.1.0",
+      "commit": "e6ac938ec068d2ebc0623dd4685d7b07912ef369",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/mails-0.1.0/mails-0.1.0.tar.gz",
+      "sha256": "b170987ee7146c6e8dafa6a3c37f4a57d7f15170c2ad589403298aefb16adf27",
+      "squadron": ">=0.56.0",
+      "permissions": {
+        "exec": [
+          "curl",
+          "lando"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: the mails caught by the project's Mailpit in a panel, with search, text, links and HTML.",
+              "Agents can find and read them with `mails_list` and `mails_read`."
+            ],
+            "fr": [
+              "Première version : les mails attrapés par le Mailpit du projet dans un panneau, avec recherche, texte, liens et HTML.",
+              "Les agents peuvent les retrouver et les lire avec `mails_list` et `mails_read`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "e6ac938ec068d2ebc0623dd4685d7b07912ef369",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/mails-0.1.0/mails-0.1.0.tar.gz",
+          "sha256": "b170987ee7146c6e8dafa6a3c37f4a57d7f15170c2ad589403298aefb16adf27",
+          "squadron": ">=0.56.0",
+          "permissions": {
+            "exec": [
+              "curl",
+              "lando"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: the mails caught by the project's Mailpit in a panel, with search, text, links and HTML.",
+                  "Agents can find and read them with `mails_list` and `mails_read`."
+                ],
+                "fr": [
+                  "Première version : les mails attrapés par le Mailpit du projet dans un panneau, avec recherche, texte, liens et HTML.",
+                  "Les agents peuvent les retrouver et les lire avec `mails_list` et `mails_read`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "notes",
       "name": {
         "en": "Notes",
