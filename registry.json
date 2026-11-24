@@ -22,5 +22,8 @@
   },
   "mails": {
     "repository": "https://github.com/sebastien-akki/squadron-mails"
+  },
+  "envs": {
+    "repository": "https://github.com/sebastien-akki/squadron-envs"
   }
 }
