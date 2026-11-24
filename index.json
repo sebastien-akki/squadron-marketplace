@@ -552,6 +552,83 @@
           ]
         }
       ]
+    },
+    {
+      "id": "worktree",
+      "name": {
+        "en": "Worktree",
+        "fr": "Worktree"
+      },
+      "description": {
+        "en": "Makes an agent's worktree ready to run: the local files git ignores (.env.local, auth.json, keys) copied from the project, vendor and node_modules copied as hard links in an instant, and the agent's commands run in the project's Lando app, on the worktree's code, with the real database.",
+        "fr": "Rend le worktree d’un agent prêt à tourner : les fichiers locaux ignorés par git (.env.local, auth.json, clés) copiés depuis le projet, vendor et node_modules recopiés en liens physiques en un instant, et les commandes de l’agent lancées dans l’app Lando du projet, sur le code du worktree, avec la vraie base."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZBM0UwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjIiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMTkiIHI9IjIiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjkiIHI9IjIiLz48cGF0aCBkPSJNNiA3djEwIi8+PHBhdGggZD0iTTE4IDExYzAgNC02IDMtMTIgNiIvPjwvc3ZnPgo=",
+      "repository": "https://github.com/sebastien-akki/squadron-worktree",
+      "version": "0.1.0",
+      "commit": "9d0eb1e5b45946f36c4503eca958e37990ce846f",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/worktree-0.1.0/worktree-0.1.0.tar.gz",
+      "sha256": "9fc33bd30e67535473492ab8e698549dd4def3eb226385fbbf0fbdfe02a276ce",
+      "squadron": ">=0.56.0",
+      "permissions": {
+        "exec": [
+          "git",
+          "cp",
+          "lando"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "First version: Prepare worktree copies the local files git ignores from the project, and vendor and node_modules as hard links, by itself for each new worktree.",
+              "Says when a lock file differs from the project's.",
+              "Agents run commands for their worktree in the project's Lando app with `worktree_lando`."
+            ],
+            "fr": [
+              "Première version : Préparer le worktree copie les fichiers locaux ignorés par git depuis le projet, et vendor et node_modules en liens physiques, tout seul pour chaque nouveau worktree.",
+              "Signale quand un fichier lock diffère de celui du projet.",
+              "Les agents lancent les commandes de leur worktree dans l’app Lando du projet avec `worktree_lando`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "9d0eb1e5b45946f36c4503eca958e37990ce846f",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/worktree-0.1.0/worktree-0.1.0.tar.gz",
+          "sha256": "9fc33bd30e67535473492ab8e698549dd4def3eb226385fbbf0fbdfe02a276ce",
+          "squadron": ">=0.56.0",
+          "permissions": {
+            "exec": [
+              "git",
+              "cp",
+              "lando"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: Prepare worktree copies the local files git ignores from the project, and vendor and node_modules as hard links, by itself for each new worktree.",
+                  "Says when a lock file differs from the project's.",
+                  "Agents run commands for their worktree in the project's Lando app with `worktree_lando`."
+                ],
+                "fr": [
+                  "Première version : Préparer le worktree copie les fichiers locaux ignorés par git depuis le projet, et vendor et node_modules en liens physiques, tout seul pour chaque nouveau worktree.",
+                  "Signale quand un fichier lock diffère de celui du projet.",
+                  "Les agents lancent les commandes de leur worktree dans l’app Lando du projet avec `worktree_lando`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
