@@ -13,5 +13,8 @@
   },
   "worktree": {
     "repository": "https://github.com/sebastien-akki/squadron-worktree"
+  },
+  "stack": {
+    "repository": "https://github.com/sebastien-akki/squadron-stack"
   }
 }
