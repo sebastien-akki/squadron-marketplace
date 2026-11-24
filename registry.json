@@ -1,27 +1,5 @@
 {
-  "hello": {
-    "repository": "https://github.com/Jgrasp/squadron-extensions",
-    "path": "examples/hello"
-  },
-  "google-workspace-share": {
-    "repository": "https://github.com/Jgrasp/squadron-google-workspace-share"
-  },
-  "jira": {
-    "repository": "https://github.com/Jgrasp/squadron-jira"
-  },
-  "agent-office": {
-    "repository": "https://github.com/Jgrasp/squadron-agent-office"
-  },
-  "github": {
-    "repository": "https://github.com/Jgrasp/squadron-github"
-  },
-  "bitbucket": {
-    "repository": "https://github.com/Jgrasp/squadron-bitbucket"
-  },
-  "gitlab": {
-    "repository": "https://github.com/Jgrasp/squadron-gitlab"
-  },
-  "azure": {
-    "repository": "https://github.com/Jgrasp/squadron-azure"
+  "db": {
+    "repository": "https://github.com/sebastien-akki/squadron-db"
   }
 }
