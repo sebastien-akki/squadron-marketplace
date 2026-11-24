@@ -10,5 +10,8 @@
   },
   "sentry": {
     "repository": "https://github.com/sebastien-akki/squadron-sentry"
+  },
+  "worktree": {
+    "repository": "https://github.com/sebastien-akki/squadron-worktree"
   }
 }
