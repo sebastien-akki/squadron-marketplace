@@ -19,5 +19,8 @@
   },
   "delivery": {
     "repository": "https://github.com/sebastien-akki/squadron-delivery"
+  },
+  "mails": {
+    "repository": "https://github.com/sebastien-akki/squadron-mails"
   }
 }
