@@ -1,1 +1,276 @@
-{ "api": 1, "extensions": [] }
+{
+  "api": 1,
+  "extensions": [
+    {
+      "id": "db",
+      "name": {
+        "en": "Databases",
+        "fr": "Bases de données"
+      },
+      "description": {
+        "en": "The databases of each project next to your agents: PostgreSQL, MySQL/MariaDB, SQLite, SQL Server and Oracle, an SQL editor with completion, checking and :name parameters, tables to filter and edit, dashboards, dumps, schema comparison, transfers between databases, a data generator and a visual query builder, over SSH or Kubernetes, with production asking before each query",
+        "fr": "Les bases de données de chaque projet à côté de vos agents : PostgreSQL, MySQL/MariaDB, SQLite, SQL Server et Oracle, éditeur SQL avec complétion, vérification et paramètres :nom, tables à filtrer et modifier, tableaux de bord, dumps, comparaison de schémas, transferts entre bases, générateur de données et éditeur visuel de requêtes, par SSH ou Kubernetes, la production demandant avant chaque requête"
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzNFN0NCMSIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIj48ZWxsaXBzZSBjeD0iMTYiIGN5PSI5IiByeD0iOCIgcnk9IjMiLz48cGF0aCBkPSJNOCA5djE0YzAgMS43IDMuNiAzIDggM3M4LTEuMyA4LTNWOSIvPjxwYXRoIGQ9Ik04IDE2YzAgMS43IDMuNiAzIDggM3M4LTEuMyA4LTMiLz48L2c+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-db",
+      "version": "0.4.0",
+      "commit": "875e51a59145748ea87cc3e88ba87e567d63edd3",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/db-0.4.0/db-0.4.0.tar.gz",
+      "sha256": "3cd3c06818965ed3f9c06e4b999e9c9c10131f4030cf884ce68608cc9d3c6556",
+      "squadron": ">=0.56.0",
+      "permissions": {
+        "exec": [
+          "java"
+        ],
+        "network": [
+          "repo1.maven.org"
+        ]
+      },
+      "changelog": [
+        {
+          "version": "0.4.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "SQL Server and Oracle, with their JDBC drivers downloaded on first use; their reads run in a transaction that is always rolled back.",
+              "`:name` parameters in queries: their values are asked before the run and remembered per connection.",
+              "A server dashboard per connection: sessions, running queries, locks, cache, size and per-second rates, refreshed every few seconds.",
+              "Full dumps with pg_dump or mysqldump, the computer's own or the official Docker image of the server's version; SQLite is copied with VACUUM INTO.",
+              "Schema comparison, with the script that makes the other schema the same (removals stay commented out).",
+              "Transfer tables between two databases, even of different engines, creating the missing tables.",
+              "A data generator: plausible rows from the columns' names and types, foreign keys taken from existing rows.",
+              "A visual query builder: tables joined by their foreign keys, columns, aggregates, conditions and sorting.",
+              "Images stored as binary show in the value pane, and a console result taken from one table can be edited in place.",
+              "Sensitive columns are masked: passwords, tokens, secrets, keys, IBANs and card numbers by their name, and any column from its right-click menu, remembered per connection.",
+              "Automatic refresh of a table or of a console result, every 5 to 60 seconds, always read-only; it waits while you type, select rows or have changes pending, and never reruns a query on production."
+            ],
+            "fr": [
+              "SQL Server et Oracle, avec leur pilote JDBC téléchargé à la première utilisation ; leurs lectures tournent dans une transaction toujours annulée.",
+              "Des paramètres `:nom` dans les requêtes : leurs valeurs sont demandées avant l’exécution et gardées par connexion.",
+              "Un tableau de bord du serveur par connexion : sessions, requêtes en cours, verrous, cache, taille et débits par seconde, actualisés toutes les quelques secondes.",
+              "Des dumps complets avec pg_dump ou mysqldump, celui du poste ou l’image Docker officielle de la version du serveur ; SQLite est copié avec VACUUM INTO.",
+              "La comparaison de schémas, avec le script qui rend l’autre schéma identique (les suppressions restent en commentaire).",
+              "Le transfert de tables entre deux bases, même de moteurs différents, en créant les tables absentes.",
+              "Un générateur de données : des lignes vraisemblables selon le nom et le type des colonnes, les clés étrangères prises parmi les lignes existantes.",
+              "Un éditeur visuel de requêtes : tables jointes par leurs clés étrangères, colonnes, agrégats, conditions et tri.",
+              "Les images stockées en binaire s’affichent dans le panneau Valeur, et un résultat de console tiré d’une seule table se modifie sur place.",
+              "Les colonnes sensibles sont masquées : mots de passe, jetons, secrets, clés, IBAN et numéros de carte d’après leur nom, et n’importe quelle colonne depuis son menu clic droit, retenu par connexion.",
+              "L’actualisation automatique d’une table ou d’un résultat de console, de 5 à 60 secondes, toujours en lecture seule ; elle attend pendant une saisie, une sélection de lignes ou des modifications en attente, et ne relance jamais une requête sur la production."
+            ]
+          }
+        },
+        {
+          "version": "0.3.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "Connect through Kubernetes: the extension runs `kubectl port-forward` to a service or pod for each query, with your own kubeconfig.",
+              "A filter bar on tables: WHERE and ORDER BY with column completion, rows per page, first and last page, and Filter on a cell (=, <>, LIKE, IS NULL) added to the current filter.",
+              "The database checks the console's queries without running them: syntax errors and unknown names are underlined, while typing or with Check.",
+              "Materialized views can be refreshed from the tree, export works on views, and the DDL of partitioned tables, partitions and materialized views is complete.",
+              "Settings in Squadron: connection colors, completion, query checking and rows per page.",
+              "Errors from the engine and the database follow the system language, English or French."
+            ],
+            "fr": [
+              "Connexion par Kubernetes : l’extension lance `kubectl port-forward` vers un service ou un pod à chaque requête, avec votre propre configuration.",
+              "Une barre de filtres sur les tables : WHERE et ORDER BY avec complétion des colonnes, lignes par page, première et dernière page, et Filtrer sur une cellule (=, <>, LIKE, IS NULL) ajouté au filtre en cours.",
+              "La base vérifie les requêtes de la console sans les exécuter : erreurs de syntaxe et noms inconnus soulignés, pendant la frappe ou avec Vérifier.",
+              "Les vues matérialisées se rafraîchissent depuis l’arbre, l’export marche sur les vues, et le DDL des tables partitionnées, des partitions et des vues matérialisées est complet.",
+              "Des réglages dans Squadron : couleurs des connexions, complétion, vérification des requêtes et lignes par page.",
+              "Les erreurs du moteur et de la base suivent la langue du système, anglais ou français."
+            ]
+          }
+        },
+        {
+          "version": "0.2.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": [
+              "A real SQL editor: colors, completion of tables and columns, search, Shift+Alt+F to format, several consoles per connection.",
+              "Run the query under the cursor (Ctrl+Enter) or the whole script (Ctrl+Shift+Enter), in a transaction if you want, with an Output tab and one tab per result.",
+              "Explain a query, and open ready-made queries: active sessions, locks, table sizes, unused indexes, server settings.",
+              "Tables: sort by clicking a column, filter with a WHERE, count the rows, follow a foreign key to the row it points to.",
+              "Edit rows in place: change a cell, set NULL, add, duplicate or delete rows, then submit them in one transaction after seeing the SQL.",
+              "Copy rows as TSV, CSV, JSON, Markdown or SQL INSERT; export a whole result or table to a file without the 1,000-row limit.",
+              "Import a CSV into a table, all or nothing.",
+              "A value pane (JSON laid out) and a record view of one row at a time.",
+              "Structure with foreign keys both ways, and the DDL of tables, views, functions and procedures.",
+              "A diagram of each schema, which copies as Mermaid.",
+              "A color per connection, on its tabs, in the tree and behind its consoles; production takes red when you tick it.",
+              "A read-only option per connection.",
+              "Right-click a table to generate SELECT, INSERT, UPDATE, DELETE, ALTER or DROP in the console."
+            ],
+            "fr": [
+              "Un véritable éditeur SQL : couleurs, complétion des tables et des colonnes, recherche, Maj+Alt+F pour formater, plusieurs consoles par connexion.",
+              "Exécutez la requête sous le curseur (Ctrl+Entrée) ou tout le script (Ctrl+Maj+Entrée), dans une transaction si vous le souhaitez, avec un onglet Sortie et un onglet par résultat.",
+              "Le plan d’une requête, et des requêtes toutes prêtes : sessions actives, verrous, tailles des tables, index inutilisés, paramètres du serveur.",
+              "Tables : triez d’un clic sur une colonne, filtrez par un WHERE, comptez les lignes, suivez une clé étrangère jusqu’à la ligne visée.",
+              "Modifiez les lignes sur place : une cellule, NULL, ajout, duplication ou suppression, puis validez le tout dans une transaction après avoir vu le SQL.",
+              "Copiez des lignes en TSV, CSV, JSON, Markdown ou SQL INSERT ; exportez un résultat ou une table entière dans un fichier, sans la limite de 1 000 lignes.",
+              "Importez un CSV dans une table, tout ou rien.",
+              "Un volet Valeur (JSON mis en forme) et une vue fiche, une ligne à la fois.",
+              "La structure avec les clés étrangères dans les deux sens, et le DDL des tables, vues, fonctions et procédures.",
+              "Un diagramme de chaque schéma, qui se copie en Mermaid.",
+              "Une couleur par connexion, sur ses onglets, dans l’arbre et derrière ses consoles ; la production prend le rouge quand vous la cochez.",
+              "Une option Lecture seule par connexion.",
+              "Clic droit sur une table pour générer SELECT, INSERT, UPDATE, DELETE, ALTER ou DROP dans la console."
+            ]
+          }
+        },
+        {
+          "version": "0.1.0",
+          "date": "2026-11-20",
+          "notes": {
+            "en": [
+              "First version: the databases of each project in a panel next to your agents, PostgreSQL, MySQL, MariaDB and SQLite.",
+              "Connections through an SSH tunnel, with your own `ssh`, its config, keys and agent.",
+              "Double-click a table to see its rows, page by page, and its structure: columns, keys, indexes and foreign keys.",
+              "An SQL console per connection: the query under the cursor with Ctrl+Enter, and its history.",
+              "A production connection asks before each query, runs reads read-only, and wants its name typed before a write.",
+              "Passwords stay in a file only you can read, in the `.pgpass` format."
+            ],
+            "fr": [
+              "Première version : les bases de données de chaque projet dans un panneau à côté de vos agents, PostgreSQL, MySQL, MariaDB et SQLite.",
+              "Connexions par tunnel SSH, avec votre `ssh`, sa configuration, vos clés et votre agent.",
+              "Un double-clic sur une table montre son contenu, page par page, et sa structure : colonnes, clés, index et clés étrangères.",
+              "Une console SQL par connexion : la requête sous le curseur avec Ctrl+Entrée, et son historique.",
+              "Une connexion de production demande avant chaque requête, lit en lecture seule, et veut son nom tapé avant une écriture.",
+              "Les mots de passe restent dans un fichier lisible par vous seul, au format `.pgpass`."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.4.0",
+          "commit": "875e51a59145748ea87cc3e88ba87e567d63edd3",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/db-0.4.0/db-0.4.0.tar.gz",
+          "sha256": "3cd3c06818965ed3f9c06e4b999e9c9c10131f4030cf884ce68608cc9d3c6556",
+          "squadron": ">=0.56.0",
+          "permissions": {
+            "exec": [
+              "java"
+            ],
+            "network": [
+              "repo1.maven.org"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.4.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "SQL Server and Oracle, with their JDBC drivers downloaded on first use; their reads run in a transaction that is always rolled back.",
+                  "`:name` parameters in queries: their values are asked before the run and remembered per connection.",
+                  "A server dashboard per connection: sessions, running queries, locks, cache, size and per-second rates, refreshed every few seconds.",
+                  "Full dumps with pg_dump or mysqldump, the computer's own or the official Docker image of the server's version; SQLite is copied with VACUUM INTO.",
+                  "Schema comparison, with the script that makes the other schema the same (removals stay commented out).",
+                  "Transfer tables between two databases, even of different engines, creating the missing tables.",
+                  "A data generator: plausible rows from the columns' names and types, foreign keys taken from existing rows.",
+                  "A visual query builder: tables joined by their foreign keys, columns, aggregates, conditions and sorting.",
+                  "Images stored as binary show in the value pane, and a console result taken from one table can be edited in place.",
+                  "Sensitive columns are masked: passwords, tokens, secrets, keys, IBANs and card numbers by their name, and any column from its right-click menu, remembered per connection.",
+                  "Automatic refresh of a table or of a console result, every 5 to 60 seconds, always read-only; it waits while you type, select rows or have changes pending, and never reruns a query on production."
+                ],
+                "fr": [
+                  "SQL Server et Oracle, avec leur pilote JDBC téléchargé à la première utilisation ; leurs lectures tournent dans une transaction toujours annulée.",
+                  "Des paramètres `:nom` dans les requêtes : leurs valeurs sont demandées avant l’exécution et gardées par connexion.",
+                  "Un tableau de bord du serveur par connexion : sessions, requêtes en cours, verrous, cache, taille et débits par seconde, actualisés toutes les quelques secondes.",
+                  "Des dumps complets avec pg_dump ou mysqldump, celui du poste ou l’image Docker officielle de la version du serveur ; SQLite est copié avec VACUUM INTO.",
+                  "La comparaison de schémas, avec le script qui rend l’autre schéma identique (les suppressions restent en commentaire).",
+                  "Le transfert de tables entre deux bases, même de moteurs différents, en créant les tables absentes.",
+                  "Un générateur de données : des lignes vraisemblables selon le nom et le type des colonnes, les clés étrangères prises parmi les lignes existantes.",
+                  "Un éditeur visuel de requêtes : tables jointes par leurs clés étrangères, colonnes, agrégats, conditions et tri.",
+                  "Les images stockées en binaire s’affichent dans le panneau Valeur, et un résultat de console tiré d’une seule table se modifie sur place.",
+                  "Les colonnes sensibles sont masquées : mots de passe, jetons, secrets, clés, IBAN et numéros de carte d’après leur nom, et n’importe quelle colonne depuis son menu clic droit, retenu par connexion.",
+                  "L’actualisation automatique d’une table ou d’un résultat de console, de 5 à 60 secondes, toujours en lecture seule ; elle attend pendant une saisie, une sélection de lignes ou des modifications en attente, et ne relance jamais une requête sur la production."
+                ]
+              }
+            },
+            {
+              "version": "0.3.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "Connect through Kubernetes: the extension runs `kubectl port-forward` to a service or pod for each query, with your own kubeconfig.",
+                  "A filter bar on tables: WHERE and ORDER BY with column completion, rows per page, first and last page, and Filter on a cell (=, <>, LIKE, IS NULL) added to the current filter.",
+                  "The database checks the console's queries without running them: syntax errors and unknown names are underlined, while typing or with Check.",
+                  "Materialized views can be refreshed from the tree, export works on views, and the DDL of partitioned tables, partitions and materialized views is complete.",
+                  "Settings in Squadron: connection colors, completion, query checking and rows per page.",
+                  "Errors from the engine and the database follow the system language, English or French."
+                ],
+                "fr": [
+                  "Connexion par Kubernetes : l’extension lance `kubectl port-forward` vers un service ou un pod à chaque requête, avec votre propre configuration.",
+                  "Une barre de filtres sur les tables : WHERE et ORDER BY avec complétion des colonnes, lignes par page, première et dernière page, et Filtrer sur une cellule (=, <>, LIKE, IS NULL) ajouté au filtre en cours.",
+                  "La base vérifie les requêtes de la console sans les exécuter : erreurs de syntaxe et noms inconnus soulignés, pendant la frappe ou avec Vérifier.",
+                  "Les vues matérialisées se rafraîchissent depuis l’arbre, l’export marche sur les vues, et le DDL des tables partitionnées, des partitions et des vues matérialisées est complet.",
+                  "Des réglages dans Squadron : couleurs des connexions, complétion, vérification des requêtes et lignes par page.",
+                  "Les erreurs du moteur et de la base suivent la langue du système, anglais ou français."
+                ]
+              }
+            },
+            {
+              "version": "0.2.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "A real SQL editor: colors, completion of tables and columns, search, Shift+Alt+F to format, several consoles per connection.",
+                  "Run the query under the cursor (Ctrl+Enter) or the whole script (Ctrl+Shift+Enter), in a transaction if you want, with an Output tab and one tab per result.",
+                  "Explain a query, and open ready-made queries: active sessions, locks, table sizes, unused indexes, server settings.",
+                  "Tables: sort by clicking a column, filter with a WHERE, count the rows, follow a foreign key to the row it points to.",
+                  "Edit rows in place: change a cell, set NULL, add, duplicate or delete rows, then submit them in one transaction after seeing the SQL.",
+                  "Copy rows as TSV, CSV, JSON, Markdown or SQL INSERT; export a whole result or table to a file without the 1,000-row limit.",
+                  "Import a CSV into a table, all or nothing.",
+                  "A value pane (JSON laid out) and a record view of one row at a time.",
+                  "Structure with foreign keys both ways, and the DDL of tables, views, functions and procedures.",
+                  "A diagram of each schema, which copies as Mermaid.",
+                  "A color per connection, on its tabs, in the tree and behind its consoles; production takes red when you tick it.",
+                  "A read-only option per connection.",
+                  "Right-click a table to generate SELECT, INSERT, UPDATE, DELETE, ALTER or DROP in the console."
+                ],
+                "fr": [
+                  "Un véritable éditeur SQL : couleurs, complétion des tables et des colonnes, recherche, Maj+Alt+F pour formater, plusieurs consoles par connexion.",
+                  "Exécutez la requête sous le curseur (Ctrl+Entrée) ou tout le script (Ctrl+Maj+Entrée), dans une transaction si vous le souhaitez, avec un onglet Sortie et un onglet par résultat.",
+                  "Le plan d’une requête, et des requêtes toutes prêtes : sessions actives, verrous, tailles des tables, index inutilisés, paramètres du serveur.",
+                  "Tables : triez d’un clic sur une colonne, filtrez par un WHERE, comptez les lignes, suivez une clé étrangère jusqu’à la ligne visée.",
+                  "Modifiez les lignes sur place : une cellule, NULL, ajout, duplication ou suppression, puis validez le tout dans une transaction après avoir vu le SQL.",
+                  "Copiez des lignes en TSV, CSV, JSON, Markdown ou SQL INSERT ; exportez un résultat ou une table entière dans un fichier, sans la limite de 1 000 lignes.",
+                  "Importez un CSV dans une table, tout ou rien.",
+                  "Un volet Valeur (JSON mis en forme) et une vue fiche, une ligne à la fois.",
+                  "La structure avec les clés étrangères dans les deux sens, et le DDL des tables, vues, fonctions et procédures.",
+                  "Un diagramme de chaque schéma, qui se copie en Mermaid.",
+                  "Une couleur par connexion, sur ses onglets, dans l’arbre et derrière ses consoles ; la production prend le rouge quand vous la cochez.",
+                  "Une option Lecture seule par connexion.",
+                  "Clic droit sur une table pour générer SELECT, INSERT, UPDATE, DELETE, ALTER ou DROP dans la console."
+                ]
+              }
+            },
+            {
+              "version": "0.1.0",
+              "date": "2026-11-20",
+              "notes": {
+                "en": [
+                  "First version: the databases of each project in a panel next to your agents, PostgreSQL, MySQL, MariaDB and SQLite.",
+                  "Connections through an SSH tunnel, with your own `ssh`, its config, keys and agent.",
+                  "Double-click a table to see its rows, page by page, and its structure: columns, keys, indexes and foreign keys.",
+                  "An SQL console per connection: the query under the cursor with Ctrl+Enter, and its history.",
+                  "A production connection asks before each query, runs reads read-only, and wants its name typed before a write.",
+                  "Passwords stay in a file only you can read, in the `.pgpass` format."
+                ],
+                "fr": [
+                  "Première version : les bases de données de chaque projet dans un panneau à côté de vos agents, PostgreSQL, MySQL, MariaDB et SQLite.",
+                  "Connexions par tunnel SSH, avec votre `ssh`, sa configuration, vos clés et votre agent.",
+                  "Un double-clic sur une table montre son contenu, page par page, et sa structure : colonnes, clés, index et clés étrangères.",
+                  "Une console SQL par connexion : la requête sous le curseur avec Ctrl+Entrée, et son historique.",
+                  "Une connexion de production demande avant chaque requête, lit en lecture seule, et veut son nom tapé avant une écriture.",
+                  "Les mots de passe restent dans un fichier lisible par vous seul, au format `.pgpass`."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
