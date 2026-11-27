@@ -1763,28 +1763,51 @@
     {
       "id": "worktree",
       "name": {
-        "en": "Worktree",
-        "fr": "Worktree"
+        "en": "Worktrees",
+        "fr": "Worktrees"
       },
       "description": {
-        "en": "Makes an agent's worktree ready to run: the local files git ignores (.env.local, auth.json, keys) copied from the project, vendor and node_modules copied as hard links in an instant, and the agent's commands run in the project's Lando app, on the worktree's code, with the real database.",
-        "fr": "Rend le worktree d’un agent prêt à tourner : les fichiers locaux ignorés par git (.env.local, auth.json, clés) copiés depuis le projet, vendor et node_modules recopiés en liens physiques en un instant, et les commandes de l’agent lancées dans l’app Lando du projet, sur le code du worktree, avec la vraie base."
+        "en": "Agents' worktrees, from start to cleanup. Ready as soon as the agent starts: ignored local files (.env.local, auth.json, keys) copied, vendor and node_modules as hard links. Commands run in the project's Lando app on the worktree's code. Merged worktrees listed to remove in two clicks.",
+        "fr": "Les worktrees des agents, du départ au nettoyage. Prêts dès que l’agent démarre : fichiers locaux ignorés (.env.local, auth.json, clés) copiés, vendor et node_modules en liens physiques. Les commandes tournent dans l’app Lando du projet sur le code du worktree. Les worktrees mergés sont listés pour les supprimer en deux clics."
       },
       "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNEZBM0UwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iNiIgY3k9IjUiIHI9IjIiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMTkiIHI9IjIiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjkiIHI9IjIiLz48cGF0aCBkPSJNNiA3djEwIi8+PHBhdGggZD0iTTE4IDExYzAgNC02IDMtMTIgNiIvPjwvc3ZnPgo=",
       "repository": "https://github.com/sebastien-akki/squadron-worktree",
-      "version": "0.1.0",
-      "commit": "9d0eb1e5b45946f36c4503eca958e37990ce846f",
-      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/worktree-0.1.0/worktree-0.1.0.tar.gz",
-      "sha256": "9fc33bd30e67535473492ab8e698549dd4def3eb226385fbbf0fbdfe02a276ce",
-      "squadron": ">=0.56.0",
+      "version": "0.2.0",
+      "commit": "d717538edffcd1c26f542b448202150a643affc5",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/worktree-0.2.0/worktree-0.2.0.tar.gz",
+      "sha256": "c3b40f7cf16384a54bcb14557b56328dfc555c44511f95136ab5abb1a2943fc3",
+      "squadron": ">=0.59.0",
       "permissions": {
         "exec": [
           "git",
           "cp",
           "lando"
+        ],
+        "agents": [
+          "read",
+          "activity",
+          "archive"
         ]
       },
       "changelog": [
+        {
+          "version": "0.2.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "Renamed Worktrees.",
+              "A new worktree is prepared as soon as Squadron reports its agent, before its first turn ends, so the agent and the checks find vendor from the start.",
+              "Project worktrees lists the worktrees with their branch: merged into a remote branch, remote branch deleted, or not merged; changed files, unpushed commits and open agent.",
+              "Remove deletes a clean worktree with no open agent, and its local branch when git sees it merged, after a second click; all merged ones at once too. Archive the agent for a merged worktree whose agent is open."
+            ],
+            "fr": [
+              "Renommée Worktrees.",
+              "Un nouveau worktree est préparé dès que Squadron signale son agent, avant la fin de son premier tour : l’agent et les contrôles trouvent vendor dès le départ.",
+              "Worktrees du projet liste les worktrees avec leur branche : mergée dans une branche distante, branche distante supprimée ou pas mergée ; fichiers modifiés, commits non poussés et agent ouvert.",
+              "Supprimer retire un worktree propre sans agent ouvert, et sa branche locale quand git la voit mergée, après un second clic ; aussi tous les mergés d’un coup. Archiver l’agent pour un worktree mergé dont l’agent est ouvert."
+            ]
+          }
+        },
         {
           "version": "0.1.0",
           "date": "2026-11-24",
@@ -1803,6 +1826,61 @@
         }
       ],
       "versions": [
+        {
+          "version": "0.2.0",
+          "commit": "d717538edffcd1c26f542b448202150a643affc5",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/worktree-0.2.0/worktree-0.2.0.tar.gz",
+          "sha256": "c3b40f7cf16384a54bcb14557b56328dfc555c44511f95136ab5abb1a2943fc3",
+          "squadron": ">=0.59.0",
+          "permissions": {
+            "exec": [
+              "git",
+              "cp",
+              "lando"
+            ],
+            "agents": [
+              "read",
+              "activity",
+              "archive"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.2.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "Renamed Worktrees.",
+                  "A new worktree is prepared as soon as Squadron reports its agent, before its first turn ends, so the agent and the checks find vendor from the start.",
+                  "Project worktrees lists the worktrees with their branch: merged into a remote branch, remote branch deleted, or not merged; changed files, unpushed commits and open agent.",
+                  "Remove deletes a clean worktree with no open agent, and its local branch when git sees it merged, after a second click; all merged ones at once too. Archive the agent for a merged worktree whose agent is open."
+                ],
+                "fr": [
+                  "Renommée Worktrees.",
+                  "Un nouveau worktree est préparé dès que Squadron signale son agent, avant la fin de son premier tour : l’agent et les contrôles trouvent vendor dès le départ.",
+                  "Worktrees du projet liste les worktrees avec leur branche : mergée dans une branche distante, branche distante supprimée ou pas mergée ; fichiers modifiés, commits non poussés et agent ouvert.",
+                  "Supprimer retire un worktree propre sans agent ouvert, et sa branche locale quand git la voit mergée, après un second clic ; aussi tous les mergés d’un coup. Archiver l’agent pour un worktree mergé dont l’agent est ouvert."
+                ]
+              }
+            },
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: Prepare worktree copies the local files git ignores from the project, and vendor and node_modules as hard links, by itself for each new worktree.",
+                  "Says when a lock file differs from the project's.",
+                  "Agents run commands for their worktree in the project's Lando app with `worktree_lando`."
+                ],
+                "fr": [
+                  "Première version : Préparer le worktree copie les fichiers locaux ignorés par git depuis le projet, et vendor et node_modules en liens physiques, tout seul pour chaque nouveau worktree.",
+                  "Signale quand un fichier lock diffère de celui du projet.",
+                  "Les agents lancent les commandes de leur worktree dans l’app Lando du projet avec `worktree_lando`."
+                ]
+              }
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "commit": "9d0eb1e5b45946f36c4503eca958e37990ce846f",
