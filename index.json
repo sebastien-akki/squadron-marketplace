@@ -838,6 +838,348 @@
       ]
     },
     {
+      "id": "theme-darcula",
+      "name": {
+        "en": "Darcula theme",
+        "fr": "Thème Darcula"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by Darcula, PhpStorm’s classic dark theme. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée de Darcula, le thème sombre classique de PhpStorm. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzJiMmIyYiIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2NjY2NjYyIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iI2NjNzgzMiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM3ZWEzNmIiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjOTg3NmFhIi8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-darcula-0.1.0/theme-darcula-0.1.0.tar.gz",
+      "sha256": "9f56ca727ae119664251cb4c03a68fdbeddbfe88a26a4b9087e27bd991e8db27",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by Darcula."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de Darcula."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-darcula-0.1.0/theme-darcula-0.1.0.tar.gz",
+          "sha256": "9f56ca727ae119664251cb4c03a68fdbeddbfe88a26a4b9087e27bd991e8db27",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by Darcula."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de Darcula."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-dracula",
+      "name": {
+        "en": "Dracula theme",
+        "fr": "Thème Dracula"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by the Dracula theme for JetBrains IDEs. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée du thème Dracula pour les IDE JetBrains. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzI4MmEzNiIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2Y4ZjhmMiIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iI2ZmYjg2YyIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM4YmU5ZmQiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjZmY3OWM2Ii8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-dracula-0.1.0/theme-dracula-0.1.0.tar.gz",
+      "sha256": "0fdaf1bc2084f24da7adeae213c01631909c4d85e98a634e54e3cbdcddf9f294",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by Dracula."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de Dracula."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-dracula-0.1.0/theme-dracula-0.1.0.tar.gz",
+          "sha256": "0fdaf1bc2084f24da7adeae213c01631909c4d85e98a634e54e3cbdcddf9f294",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by Dracula."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de Dracula."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-high-contrast",
+      "name": {
+        "en": "High Contrast theme",
+        "fr": "Thème High Contrast"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by PhpStorm’s High Contrast theme. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée du thème Contraste élevé de PhpStorm. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzAwMDAwMCIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2ZmZmZmZiIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iIzFhZWJmZiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM0ZWUwN2EiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjZDI5YmZmIi8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-high-contrast-0.1.0/theme-high-contrast-0.1.0.tar.gz",
+      "sha256": "390926396e9a734d5a62d369ae0a4756f1d2791a5dd2d3e6d967e6371b15c61e",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by High Contrast."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de High Contrast."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-high-contrast-0.1.0/theme-high-contrast-0.1.0.tar.gz",
+          "sha256": "390926396e9a734d5a62d369ae0a4756f1d2791a5dd2d3e6d967e6371b15c61e",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by High Contrast."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de High Contrast."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-new-ui-dark",
+      "name": {
+        "en": "New UI Dark theme",
+        "fr": "Thème New UI Dark"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by the dark theme of PhpStorm’s new UI. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée du thème sombre de la nouvelle interface de PhpStorm. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzIxMjIyNSIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2RmZTFlNSIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iIzU0OGFmNyIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM1ZmI4NjUiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjYzc3ZGJiIi8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-new-ui-dark-0.1.0/theme-new-ui-dark-0.1.0.tar.gz",
+      "sha256": "98f8ad9e0eac27ec3da3a14bbe539c14e895c2c50608bc69ec10776091b9c349",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by New UI Dark."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de New UI Dark."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-new-ui-dark-0.1.0/theme-new-ui-dark-0.1.0.tar.gz",
+          "sha256": "98f8ad9e0eac27ec3da3a14bbe539c14e895c2c50608bc69ec10776091b9c349",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by New UI Dark."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de New UI Dark."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-nord",
+      "name": {
+        "en": "Nord theme",
+        "fr": "Thème Nord"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by the Nord theme for JetBrains IDEs. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée du thème Nord pour les IDE JetBrains. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzJlMzQ0MCIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2U1ZTlmMCIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iI2ViY2I4YiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM4ZmJjYmIiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjYjQ4ZWFkIi8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-nord-0.1.0/theme-nord-0.1.0.tar.gz",
+      "sha256": "923a4850f19589257398bdc581a1a39b895e793b9ab9f77a75bff9a8cd7ad958",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by Nord."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de Nord."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-nord-0.1.0/theme-nord-0.1.0.tar.gz",
+          "sha256": "923a4850f19589257398bdc581a1a39b895e793b9ab9f77a75bff9a8cd7ad958",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by Nord."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de Nord."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme-one-dark",
+      "name": {
+        "en": "One Dark theme",
+        "fr": "Thème One Dark"
+      },
+      "description": {
+        "en": "Recolors Squadron with a dark palette inspired by the One Dark theme for JetBrains IDEs. Turn on one theme at a time.",
+        "fr": "Recolore Squadron avec une palette sombre inspirée du thème One Dark pour les IDE JetBrains. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0iIzI4MmMzNCIvPjxyZWN0IHg9IjYiIHk9IjciIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI2Q3ZGFlMCIvPjxjaXJjbGUgY3g9IjkiIGN5PSIyMSIgcj0iNCIgZmlsbD0iI2QxOWE2NiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMjEiIHI9IjQiIGZpbGw9IiM1NmI2YzIiLz48Y2lyY2xlIGN4PSIyMyIgY3k9IjIxIiByPSI0IiBmaWxsPSIjYzY3OGRkIi8+PC9zdmc+Cg==",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-one-dark-0.1.0/theme-one-dark-0.1.0.tar.gz",
+      "sha256": "b2fc18d3f7d1bc84da6b6546aa063a9ad3f4608e01f4dd02e60ee0cc0fe97908",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: recolors Squadron with a dark palette inspired by One Dark."
+            ],
+            "fr": [
+              "Première version : recolore Squadron avec une palette sombre inspirée de One Dark."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "45efbbe0b35c1b3fb7538d83f743e727ebd2089c",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-one-dark-0.1.0/theme-one-dark-0.1.0.tar.gz",
+          "sha256": "b2fc18d3f7d1bc84da6b6546aa063a9ad3f4608e01f4dd02e60ee0cc0fe97908",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: recolors Squadron with a dark palette inspired by One Dark."
+                ],
+                "fr": [
+                  "Première version : recolore Squadron avec une palette sombre inspirée de One Dark."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "worktree",
       "name": {
         "en": "Worktree",
