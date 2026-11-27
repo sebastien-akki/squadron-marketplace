@@ -1,1 +1,7 @@
-{}
+{
+  "sentry@0.2.0": {
+    "commit": "b90acf0356cc3fe7c16c8cfdf4282bbf94aff41a",
+    "error": "CHANGELOG.fr.md:3: a line holds 300 characters at most",
+    "at": "2026-11-27"
+  }
+}
