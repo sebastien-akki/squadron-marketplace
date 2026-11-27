@@ -25,5 +25,29 @@
   },
   "envs": {
     "repository": "https://github.com/sebastien-akki/squadron-envs"
+  },
+  "theme-darcula": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-darcula"
+  },
+  "theme-new-ui-dark": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-new-ui-dark"
+  },
+  "theme-high-contrast": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-high-contrast"
+  },
+  "theme-dracula": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-dracula"
+  },
+  "theme-one-dark": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-one-dark"
+  },
+  "theme-nord": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-nord"
   }
 }
