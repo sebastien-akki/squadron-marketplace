@@ -753,15 +753,15 @@
         "fr": "Sentry"
       },
       "description": {
-        "en": "The Sentry errors of each project next to your agents. Each new or returning error comes with a notification and a fix proposed by Claude Code, which reads the repository without changing it; one click opens an agent to apply it. Agents can read the errors and their stack traces.",
-        "fr": "Les erreurs Sentry de chaque projet à côté de vos agents. Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier ; un clic ouvre un agent pour l’appliquer. Les agents peuvent lire les erreurs et leurs stack traces."
+        "en": "The Sentry errors of each project next to your agents. Haiku sorts them: errors with the same cause grouped, those with nothing to fix (a deployment, a local environment, a test) set aside to close in one click, and those not seen for some days, the number chosen per project, listed to resolve. Claude Code analyses an error and proposes a plan, by itself or when you ask, reading the repository without changing it; no agent starts without you.",
+        "fr": "Les erreurs Sentry de chaque projet à côté de vos agents. Haiku les trie : les erreurs de même cause regroupées, celles qui n’ont rien à corriger (une mise en production, un environnement local, un test) mises de côté pour les fermer d’un clic, et celles sans occurrence depuis quelques jours, un nombre choisi par projet, listées pour les résoudre. Claude Code analyse une erreur et propose un plan, de lui-même ou à votre demande, en lisant le dépôt sans le modifier ; aucun agent ne démarre sans vous."
       },
       "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQTc4QkZBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDMuNWw5IDE1LjVIM3oiLz48cGF0aCBkPSJNMTIgMTB2NCIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTYuNiIgcj0iLjYiIGZpbGw9IiNBNzhCRkEiLz48L3N2Zz4K",
       "repository": "https://github.com/sebastien-akki/squadron-sentry",
-      "version": "0.1.0",
-      "commit": "de44df14ad7a4bf516f7d988c4f3128e65d89d05",
-      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.1.0/sentry-0.1.0.tar.gz",
-      "sha256": "65c227935452cfc1fee310d7105b268fa39224ac9d82f2abc75b98a52f249afc",
+      "version": "0.2.0",
+      "commit": "23d2cada8c0e8f34348ab16c61fe32111b7aeaa6",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.2.0/sentry-0.2.0.tar.gz",
+      "sha256": "d48627f5924efbdc66f343410bf476cde081d1f353beec59071de1df8d63e659",
       "squadron": ">=0.59.0",
       "permissions": {
         "exec": [
@@ -769,6 +769,28 @@
         ]
       },
       "changelog": [
+        {
+          "version": "0.2.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "Triage by Haiku: issues of one project with the same cause grouped, with **Merge in Sentry**.",
+              "Issues with nothing to fix (a deployment, a local environment, a test) set aside with their reason, to resolve or ignore one by one or all at once; they get no automatic analysis.",
+              "**Not seen for [n] days › List**: the unresolved issues with no event for that many days, the number kept per project, to resolve when you choose.",
+              "The analysis now writes a diagnosis, a numbered plan and what to check. **Analyse and plan** runs it on any issue when automatic analysis is off.",
+              "**Fix with an agent** asks the agent to show its plan and wait for your go-ahead before changing any file.",
+              "Merging and resolving all ask for a second click."
+            ],
+            "fr": [
+              "Tri par Haiku : les erreurs d’un même projet de même cause regroupées, avec **Fusionner dans Sentry**.",
+              "Les erreurs qui n’ont rien à corriger (une mise en production, un environnement local, un test) mises de côté avec leur raison, à résoudre ou ignorer une à une ou toutes d’un coup ; elles ne sont pas analysées automatiquement.",
+              "**Sans occurrence depuis [n] jours › Lister** : les erreurs non résolues sans événement depuis ce nombre de jours, retenu par projet, à résoudre quand vous le décidez.",
+              "L’analyse écrit maintenant un diagnostic, un plan numéroté et ce qu’il faut vérifier. **Analyser et planifier** la lance sur n’importe quelle erreur quand l’analyse automatique est coupée.",
+              "**Corriger avec un agent** demande à l’agent de présenter son plan et d’attendre votre accord avant de modifier un fichier.",
+              "Fusionner et tout résoudre demandent un second clic."
+            ]
+          }
+        },
         {
           "version": "0.1.0",
           "date": "2026-11-24",
@@ -789,6 +811,60 @@
         }
       ],
       "versions": [
+        {
+          "version": "0.2.0",
+          "commit": "23d2cada8c0e8f34348ab16c61fe32111b7aeaa6",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.2.0/sentry-0.2.0.tar.gz",
+          "sha256": "d48627f5924efbdc66f343410bf476cde081d1f353beec59071de1df8d63e659",
+          "squadron": ">=0.59.0",
+          "permissions": {
+            "exec": [
+              "claude"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.2.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "Triage by Haiku: issues of one project with the same cause grouped, with **Merge in Sentry**.",
+                  "Issues with nothing to fix (a deployment, a local environment, a test) set aside with their reason, to resolve or ignore one by one or all at once; they get no automatic analysis.",
+                  "**Not seen for [n] days › List**: the unresolved issues with no event for that many days, the number kept per project, to resolve when you choose.",
+                  "The analysis now writes a diagnosis, a numbered plan and what to check. **Analyse and plan** runs it on any issue when automatic analysis is off.",
+                  "**Fix with an agent** asks the agent to show its plan and wait for your go-ahead before changing any file.",
+                  "Merging and resolving all ask for a second click."
+                ],
+                "fr": [
+                  "Tri par Haiku : les erreurs d’un même projet de même cause regroupées, avec **Fusionner dans Sentry**.",
+                  "Les erreurs qui n’ont rien à corriger (une mise en production, un environnement local, un test) mises de côté avec leur raison, à résoudre ou ignorer une à une ou toutes d’un coup ; elles ne sont pas analysées automatiquement.",
+                  "**Sans occurrence depuis [n] jours › Lister** : les erreurs non résolues sans événement depuis ce nombre de jours, retenu par projet, à résoudre quand vous le décidez.",
+                  "L’analyse écrit maintenant un diagnostic, un plan numéroté et ce qu’il faut vérifier. **Analyser et planifier** la lance sur n’importe quelle erreur quand l’analyse automatique est coupée.",
+                  "**Corriger avec un agent** demande à l’agent de présenter son plan et d’attendre votre accord avant de modifier un fichier.",
+                  "Fusionner et tout résoudre demandent un second clic."
+                ]
+              }
+            },
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: the unresolved Sentry errors of the projects you follow, in a panel next to your agents.",
+                  "Each new or returning error brings a notification and a fix proposed by Claude Code, which reads the repository without changing it: a diagnosis, a diff and what to check.",
+                  "Fix with an agent opens New agent with the error, the proposal and the stack trace; Resolve and Ignore act on Sentry.",
+                  "Agents can read the errors and their stack traces with `sentry_issues` and `sentry_issue`."
+                ],
+                "fr": [
+                  "Première version : les erreurs Sentry non résolues des projets que vous suivez, dans un panneau à côté de vos agents.",
+                  "Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier : un diagnostic, un diff et ce qu’il faut vérifier.",
+                  "Corriger avec un agent ouvre Nouvel agent avec l’erreur, la proposition et la stack trace ; Résoudre et Ignorer agissent dans Sentry.",
+                  "Les agents peuvent lire les erreurs et leurs stack traces avec `sentry_issues` et `sentry_issue`."
+                ]
+              }
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "commit": "de44df14ad7a4bf516f7d988c4f3128e65d89d05",
