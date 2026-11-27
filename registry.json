@@ -49,5 +49,9 @@
   "theme-nord": {
     "repository": "https://github.com/sebastien-akki/squadron-themes",
     "path": "theme-nord"
+  },
+  "theme-noel": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-noel"
   }
 }
