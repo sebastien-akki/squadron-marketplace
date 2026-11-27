@@ -551,6 +551,75 @@
       ]
     },
     {
+      "id": "mep",
+      "name": {
+        "en": "Production release",
+        "fr": "MEP"
+      },
+      "description": {
+        "en": "Prepares a production release with a merge-based git flow: the Jira tickets of the project in its release status and assigned to you, a release branch from main with their features merged, the pull request to main, then after your merge the Jira update (comment, status, reassignment to the PO), the tag, the cleanup and main merged into staging. An agent does the work and waits for your go.",
+        "fr": "Prépare une mise en production avec un flux git par merges : les tickets Jira du projet dans son statut de MEP et qui vous sont affectés, une branche release depuis main avec leurs features mergées, la PR vers main, puis après votre merge la mise à jour Jira (commentaire, statut, réaffectation au PO), le tag, le nettoyage et main mergée dans staging. Un agent fait le travail et attend votre feu vert."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzREMzk5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjIiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMTgiIHI9IjIiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjEyIiByPSIyIi8+PHBhdGggZD0iTTYgOHY4TTggNmgzYTUgNSAwIDAgMSA1IDVNOCAxOGgzYTUgNSAwIDAgMCA1LTUiLz48L3N2Zz4K",
+      "repository": "https://github.com/sebastien-akki/squadron-mep",
+      "version": "0.1.0",
+      "commit": "ffceebda984bdbc530ae3509cc3f736139513577",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/mep-0.1.0/mep-0.1.0.tar.gz",
+      "sha256": "decc1c3553e3ef06cd1e44e15117c2114f44f6cc84cb4eee947a66e902e395a9",
+      "squadron": ">=0.59.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: for each project, its Jira key and the status that means ready for production.",
+              "Prepare the release opens an agent that lists your tickets in that status, checks their features went through staging, and waits for your go.",
+              "The agent creates the release from main, merges the features, opens the pull request to main, then after your merge tags, cleans up and merges main into staging.",
+              "After the merge, the agent comments on the delivered Jira tickets, moves them to the project's status after a release and assigns them to its PO, with a Jira account of the extension."
+            ],
+            "fr": [
+              "Première version : pour chaque projet, sa clé Jira et le statut qui veut dire bon pour la MEP.",
+              "Préparer la MEP ouvre un agent qui liste vos tickets dans ce statut, vérifie que leurs features sont passées en staging et attend votre feu vert.",
+              "L’agent crée la release depuis main, y merge les features, ouvre la PR vers main, puis après votre merge pose le tag, nettoie et merge main dans staging.",
+              "Après le merge, l’agent commente les tickets Jira livrés, les passe dans le statut d’après MEP du projet et les réaffecte à son PO, avec un compte Jira de l’extension."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "ffceebda984bdbc530ae3509cc3f736139513577",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/mep-0.1.0/mep-0.1.0.tar.gz",
+          "sha256": "decc1c3553e3ef06cd1e44e15117c2114f44f6cc84cb4eee947a66e902e395a9",
+          "squadron": ">=0.59.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: for each project, its Jira key and the status that means ready for production.",
+                  "Prepare the release opens an agent that lists your tickets in that status, checks their features went through staging, and waits for your go.",
+                  "The agent creates the release from main, merges the features, opens the pull request to main, then after your merge tags, cleans up and merges main into staging.",
+                  "After the merge, the agent comments on the delivered Jira tickets, moves them to the project's status after a release and assigns them to its PO, with a Jira account of the extension."
+                ],
+                "fr": [
+                  "Première version : pour chaque projet, sa clé Jira et le statut qui veut dire bon pour la MEP.",
+                  "Préparer la MEP ouvre un agent qui liste vos tickets dans ce statut, vérifie que leurs features sont passées en staging et attend votre feu vert.",
+                  "L’agent crée la release depuis main, y merge les features, ouvre la PR vers main, puis après votre merge pose le tag, nettoie et merge main dans staging.",
+                  "Après le merge, l’agent commente les tickets Jira livrés, les passe dans le statut d’après MEP du projet et les réaffecte à son PO, avec un compte Jira de l’extension."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "notes",
       "name": {
         "en": "Notes",
