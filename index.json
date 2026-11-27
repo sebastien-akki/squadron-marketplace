@@ -758,10 +758,10 @@
       },
       "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQTc4QkZBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDMuNWw5IDE1LjVIM3oiLz48cGF0aCBkPSJNMTIgMTB2NCIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTYuNiIgcj0iLjYiIGZpbGw9IiNBNzhCRkEiLz48L3N2Zz4K",
       "repository": "https://github.com/sebastien-akki/squadron-sentry",
-      "version": "0.3.0",
-      "commit": "97563621c3c67f41551010c51ca48c6bd461c61e",
-      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.3.0/sentry-0.3.0.tar.gz",
-      "sha256": "b97df46a2a02adc0016381331f22239327fd33bcb25a5d09f466296e5b009ea9",
+      "version": "0.3.1",
+      "commit": "ba7d0bce37fb217eb3cfddadf4426c2cfc4713bd",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.3.1/sentry-0.3.1.tar.gz",
+      "sha256": "d8b14e68831211a426228c626ed7e83783f9de987f9c4efb44d353857d9192e8",
       "squadron": ">=0.59.0",
       "permissions": {
         "exec": [
@@ -769,6 +769,18 @@
         ]
       },
       "changelog": [
+        {
+          "version": "0.3.1",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "Automatic analysis of each new or returning error is now off by default: several people following the same Sentry project would each analyse every error on their own plan. Analyse and plan stays on each error."
+            ],
+            "fr": [
+              "L’analyse automatique de chaque erreur nouvelle ou revenue est maintenant coupée par défaut : plusieurs personnes suivant le même projet Sentry analyseraient chacune chaque erreur sur leur forfait. Analyser et planifier reste sur chaque erreur."
+            ]
+          }
+        },
         {
           "version": "0.3.0",
           "date": "2026-11-27",
@@ -829,6 +841,90 @@
         }
       ],
       "versions": [
+        {
+          "version": "0.3.1",
+          "commit": "ba7d0bce37fb217eb3cfddadf4426c2cfc4713bd",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/sentry-0.3.1/sentry-0.3.1.tar.gz",
+          "sha256": "d8b14e68831211a426228c626ed7e83783f9de987f9c4efb44d353857d9192e8",
+          "squadron": ">=0.59.0",
+          "permissions": {
+            "exec": [
+              "claude"
+            ]
+          },
+          "changelog": [
+            {
+              "version": "0.3.1",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "Automatic analysis of each new or returning error is now off by default: several people following the same Sentry project would each analyse every error on their own plan. Analyse and plan stays on each error."
+                ],
+                "fr": [
+                  "L’analyse automatique de chaque erreur nouvelle ou revenue est maintenant coupée par défaut : plusieurs personnes suivant le même projet Sentry analyseraient chacune chaque erreur sur leur forfait. Analyser et planifier reste sur chaque erreur."
+                ]
+              }
+            },
+            {
+              "version": "0.3.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "The list shows the total of unresolved errors of the followed projects, and sorts by last seen, newest, most events or most users.",
+                  "Each error shows its events, its age and its users, with Resolve and Ignore on its right, and its detail on a click: events, users, first and last seen with dates, status, level, project.",
+                  "Check boxes select errors, or all of them, to resolve, ignore or merge at once; merging needs two errors of one Sentry project and a second click.",
+                  "A triage group's button now ticks its errors, to merge them from the selection."
+                ],
+                "fr": [
+                  "La liste donne le total des erreurs non résolues des projets suivis, et se trie par dernière occurrence, plus récentes, plus d’occurrences ou plus d’utilisateurs.",
+                  "Chaque erreur montre ses occurrences, son âge et ses utilisateurs, avec Résoudre et Ignorer à droite, et son détail d’un clic : occurrences, utilisateurs, première et dernière occurrence datées, statut, niveau, projet.",
+                  "Des cases à cocher sélectionnent des erreurs, ou toutes, pour les résoudre, les ignorer ou les fusionner d’un coup ; fusionner demande deux erreurs d’un même projet Sentry et un second clic.",
+                  "Le bouton d’un groupe du tri coche maintenant ses erreurs, pour les fusionner depuis la sélection."
+                ]
+              }
+            },
+            {
+              "version": "0.2.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "Triage by Haiku: issues of one project with the same cause grouped, with **Merge in Sentry**.",
+                  "Issues with nothing to fix (a deployment, a local environment, a test) set aside with their reason, to resolve or ignore one by one or all at once; they get no automatic analysis.",
+                  "**Not seen for [n] days › List**: the unresolved issues with no event for that many days, the number kept per project, to resolve when you choose.",
+                  "The analysis now writes a diagnosis, a numbered plan and what to check. **Analyse and plan** runs it on any issue when automatic analysis is off.",
+                  "**Fix with an agent** asks the agent to show its plan and wait for your go-ahead before changing any file.",
+                  "Merging and resolving all ask for a second click."
+                ],
+                "fr": [
+                  "Tri par Haiku : les erreurs d’un même projet de même cause regroupées, avec **Fusionner dans Sentry**.",
+                  "Les erreurs qui n’ont rien à corriger (une mise en production, un environnement local, un test) mises de côté avec leur raison, à résoudre ou ignorer une à une ou toutes d’un coup ; elles ne sont pas analysées automatiquement.",
+                  "**Sans occurrence depuis [n] jours › Lister** : les erreurs non résolues sans événement depuis ce nombre de jours, retenu par projet, à résoudre quand vous le décidez.",
+                  "L’analyse écrit maintenant un diagnostic, un plan numéroté et ce qu’il faut vérifier. **Analyser et planifier** la lance sur n’importe quelle erreur quand l’analyse automatique est coupée.",
+                  "**Corriger avec un agent** demande à l’agent de présenter son plan et d’attendre votre accord avant de modifier un fichier.",
+                  "Fusionner et tout résoudre demandent un second clic."
+                ]
+              }
+            },
+            {
+              "version": "0.1.0",
+              "date": "2026-11-24",
+              "notes": {
+                "en": [
+                  "First version: the unresolved Sentry errors of the projects you follow, in a panel next to your agents.",
+                  "Each new or returning error brings a notification and a fix proposed by Claude Code, which reads the repository without changing it: a diagnosis, a diff and what to check.",
+                  "Fix with an agent opens New agent with the error, the proposal and the stack trace; Resolve and Ignore act on Sentry.",
+                  "Agents can read the errors and their stack traces with `sentry_issues` and `sentry_issue`."
+                ],
+                "fr": [
+                  "Première version : les erreurs Sentry non résolues des projets que vous suivez, dans un panneau à côté de vos agents.",
+                  "Chaque erreur nouvelle ou revenue arrive avec une notification et une correction proposée par Claude Code, qui lit le dépôt sans le modifier : un diagnostic, un diff et ce qu’il faut vérifier.",
+                  "Corriger avec un agent ouvre Nouvel agent avec l’erreur, la proposition et la stack trace ; Résoudre et Ignorer agissent dans Sentry.",
+                  "Les agents peuvent lire les erreurs et leurs stack traces avec `sentry_issues` et `sentry_issue`."
+                ]
+              }
+            }
+          ]
+        },
         {
           "version": "0.3.0",
           "commit": "97563621c3c67f41551010c51ca48c6bd461c61e",
