@@ -57,5 +57,8 @@
   "theme-matrix": {
     "repository": "https://github.com/sebastien-akki/squadron-themes",
     "path": "theme-matrix"
+  },
+  "mep": {
+    "repository": "https://github.com/sebastien-akki/squadron-mep"
   }
 }
