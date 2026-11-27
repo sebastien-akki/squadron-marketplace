@@ -1066,6 +1066,63 @@
       ]
     },
     {
+      "id": "theme-noel",
+      "name": {
+        "en": "Christmas theme 🎅",
+        "fr": "Thème Noël 🎅"
+      },
+      "description": {
+        "en": "Christmas colors, and a Snow panel where flakes and little Santas fall. Turn on one theme at a time.",
+        "fr": "Les couleurs de Noël, et un panneau Neige où tombent des flocons et des petits pères Noël. N’activez qu’un thème à la fois."
+      },
+      "logo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTE4IDI3QzIwIDEyIDMwIDUgNDYgOEw0NyAyN1oiIGZpbGw9IiNkNjM2M2IiLz48Y2lyY2xlIGN4PSI0NyIgY3k9IjgiIHI9IjUiIGZpbGw9IiNmZmZmZmYiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjM3IiByPSIxMiIgZmlsbD0iI2Y1YzZhNSIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iNDAiIHI9IjIuNSIgZmlsbD0iI2YyOWE4ZiIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjIuNSIgZmlsbD0iI2YyOWE4ZiIvPjxjaXJjbGUgY3g9IjI3LjUiIGN5PSIzNSIgcj0iMS44IiBmaWxsPSIjMmIyYjJiIi8+PGNpcmNsZSBjeD0iMzYuNSIgY3k9IjM1IiByPSIxLjgiIGZpbGw9IiMyYjJiMmIiLz48cGF0aCBkPSJNMTggNDBRMjAgNjAgMzIgNjBRNDQgNjAgNDYgNDBRNDAgNDcgMzIgNDdRMjQgNDcgMTggNDBaIiBmaWxsPSIjZmZmZmZmIi8+PHBhdGggZD0iTTMyIDQ0UTI3IDQwIDIyIDQ0UTI3IDQ3IDMyIDQ1UTM3IDQ3IDQyIDQ0UTM3IDQwIDMyIDQ0WiIgZmlsbD0iI2VjZThkZiIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iNDEiIHI9IjMiIGZpbGw9IiNlODc0NmUiLz48cmVjdCB4PSIxNCIgeT0iMjMiIHdpZHRoPSIzNiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPgo=",
+      "repository": "https://github.com/sebastien-akki/squadron-themes",
+      "version": "0.1.0",
+      "commit": "f25cbea5683ff4ae4336eb45e30a76382cbdade5",
+      "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-noel-0.1.0/theme-noel-0.1.0.tar.gz",
+      "sha256": "cdea8114aa53d945f26b08d5fa201cc2bdbb78da83b0da24ced9b965139deb8c",
+      "squadron": ">=0.47.0",
+      "permissions": {},
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-27",
+          "notes": {
+            "en": [
+              "First version: Christmas colors, and a Snow panel where flakes and little Santas fall."
+            ],
+            "fr": [
+              "Première version : les couleurs de Noël, et un panneau Neige où tombent des flocons et des petits pères Noël."
+            ]
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "commit": "f25cbea5683ff4ae4336eb45e30a76382cbdade5",
+          "archive": "https://github.com/sebastien-akki/squadron-marketplace/releases/download/theme-noel-0.1.0/theme-noel-0.1.0.tar.gz",
+          "sha256": "cdea8114aa53d945f26b08d5fa201cc2bdbb78da83b0da24ced9b965139deb8c",
+          "squadron": ">=0.47.0",
+          "permissions": {},
+          "changelog": [
+            {
+              "version": "0.1.0",
+              "date": "2026-11-27",
+              "notes": {
+                "en": [
+                  "First version: Christmas colors, and a Snow panel where flakes and little Santas fall."
+                ],
+                "fr": [
+                  "Première version : les couleurs de Noël, et un panneau Neige où tombent des flocons et des petits pères Noël."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "theme-nord",
       "name": {
         "en": "Nord theme",
