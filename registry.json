@@ -53,5 +53,9 @@
   "theme-noel": {
     "repository": "https://github.com/sebastien-akki/squadron-themes",
     "path": "theme-noel"
+  },
+  "theme-matrix": {
+    "repository": "https://github.com/sebastien-akki/squadron-themes",
+    "path": "theme-matrix"
   }
 }
